@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Glamour Cosmetics</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #d63384;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        .checkout-form {
+            width: 50%;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #cccccc;
+            border-radius: 5px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #7733d6;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #b82e72;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #d63384;
+            color: white;
+            margin-top: 20px;
+        }
+        .info {
+            font-size: 12px;
+            color: #666666;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html"class="active">About Us</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="check out.html"class="active">check out</a></li>
+            </ul>
+        </nav>
+        <h1>Glamour Cosmetics - Checkout</h1>
+    </header>
+    
+    <main>
+        <section form="checkout">
+            <h2>Billing Details</h2>
+            <form action="confirmation.html" method="POST">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+
+
+                <h2>Select Your Products</h2>
+                <label for="product">Choose a Product:</label>
+                <select id="product" name="product" required>
+                    <option value="lipstick">Lipstick</option>
+                    <option value="blush_palette">Blush Palette</option>
+                    <option value="nail_polish">Nail Polish</option>
+                    <option value="eye_liner">Eye Liner</option>
+                    <option value="eyeshadow">Eyeshadow</option>
+                    <option value="aloe_vera_gel">Aloe Vera Gel</option>
+                    <option value="mascara">Mascara - Volume Boost</option>
+                    <option value="makeup_brushes">Makeup Brushes</option>
+                    <option value="skin_care_set">Skin Care Set</option>
+                </select>
+
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1" required>
+                
+                <h2>Payment Information</h2>
+                <label for="card">Card Number:</label>
+                <input type="text" id="card" name="card">
+
+                <label for="expiry">Expiry Date:</label>
+                <input type="month" id="expiry" name="expiry">
+
+                <h3>Mpesa Payment</h3>
+                <label for="mpesa">Mpesa Number:</label>
+                <input type="text" id="mpesa" name="mpesa">
+                
+                <button type="submit">Place Order</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Glamour Cosmetics. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,153 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif; /* Use a clean font */
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7; /* Light background */
+}
+
+h1, h2, h3 {
+    color: #333; /* Dark text color */
+}
+
+a {
+    text-decoration: none;
+    color: #337ab7; /* Blue link color */
+}
+
+a:hover {
+    color: #23527c; /* Darker blue on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    /* Adjust styles for smaller screens */
+    body {
+        font-size: 16px;
+    }
+}
+
+/* Header Styles */
+header {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: #337ab7;
+}
+
+/* Home Page Styles */
+.home-hero {
+    background-image: linear-gradient(to bottom, #f7f7f7, #fff);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+}
+
+.home-slider {
+    max-width: 800px;
+    margin: auto;
+}
+
+.home-slider img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Contact Page Styles */
+.contact-form {
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+}
+
+/* Product Page Styles */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.product-item {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+}
+
+/* Horizontal Product Layout */
+.horizontal-products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.horizontal-product {
+    margin: 10px;
+    width: calc(33.33% - 20px); /* Adjust width based on number of columns */
+}
+
+.horizontal-product img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* About Us Page Styles */
+.about-content {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+.about-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    clear: both;
+}
